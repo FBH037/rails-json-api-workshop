@@ -5,8 +5,8 @@
   # You can have the root of your site routed with "root"
   root 'products#index'
   namespace :api do
-  resources :products
-end
+    resources :products, :orders
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
