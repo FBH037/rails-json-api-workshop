@@ -11,6 +11,14 @@
       end
     end
   end
+
+  namespace :api do
+    resources :orders
+      resources :products
+        resources :line_items
+  end
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
